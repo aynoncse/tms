@@ -1,0 +1,101 @@
+  fieldset, label { margin: 0; padding: 0; }
+  h1 { font-size: 1.5em; margin: 10px; }
+
+  /****** Style Star Rating Widget *****/
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #c30909;
+}
+  .rating { 
+    border: none;
+    float: left;
+  }
+  .box.box-default {
+    border-top-color: transparent;
+  }
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+
+  .rating > label { 
+    color: #ddd; 
+    float: right; 
+  }
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #C12E05;
+  background-color: transparent;
+}
+  /***** CSS Magic to Highlight Stars on Hover *****/
+
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+  .navbar-default {
+    background-color: #0B9444;
+    color: #fff;
+  }
+  .navbar-default .navbar-brand {
+    color: #fff;
+    font-family: 'Comic Sans MS';
+    font-weight: 800;
+  }
+  .my-nav > li {
+    border-right: 1px solid #0B9444;
+  }
+  .my-nav > li:last-child {
+    border-right: 0px;
+  }
+  .navbar-default .my-nav > li > a{
+    color:#fff;
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  .navbar-default .my-nav > li > a:focus, .navbar-default .my-nav > li > a:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+  }
+  .active-li{
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a {
+    background-color: rgba(0,0,0,0.2);
+    color: #20f21c;
+  }
+  .dropdown-menu {
+    background-color: #155a31;
+  }
+  .dropdown-menu li a{
+    color: #fff;
+  }
+
+  .select2-container--default .select2-selection--single {
+    background-color: #0B9444;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #5ff100;
+  line-height: 28px;
+}
+.date_title,.assign_title {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
